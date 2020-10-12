@@ -4,7 +4,7 @@ import time
 from providers.support.models import Metric
 
 class Wifi:
-    def __init__(self, hosts='192.168.1.0/24'):
+    def __init__(self, hosts='192.168.0.0/24'):
         self.hosts = hosts
         self.scan_results = {}
         self.thread = threading.Thread(target=self._track)

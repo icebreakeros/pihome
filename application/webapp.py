@@ -10,7 +10,7 @@ import os
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 
-temperature = TemperatureSensor(14)
+temperature = TemperatureSensor(24)
 
 motion = Motion(17)
 motion.run()

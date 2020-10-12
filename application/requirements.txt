@@ -2,3 +2,4 @@ RPi.GPIO
 Flask
 pybluez
 python-nmap
+Adafruit_DHT
