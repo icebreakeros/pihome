@@ -19,8 +19,8 @@ class TemperatureSensor:
                 return []
         if len(result) > 0:
             return [
-                Metric("pihome_temperature", int(temperature)),
-                Metric("pihome_humidity", int(humidity))
+                Metric("pihome_temperature", round(temperature, 1)),
+                Metric("pihome_humidity", round(humidity, 1))
             ]
 
         return []
