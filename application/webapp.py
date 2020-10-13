@@ -12,7 +12,7 @@ GPIO.setmode(GPIO.BCM)
 
 temperature = TemperatureSensor(24)
 
-motion = Motion(17)
+motion = Motion(14)
 motion.run()
 
 bluetooth = Bluetooth()
