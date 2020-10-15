@@ -12,7 +12,7 @@ class TemperatureSensor:
 
         if len(result) == 0 and retries > 0:
             retries -= 1
-            time.sleep(1)
+            time.sleep(2)
             try:
                 return self.read(retries)
             except:
