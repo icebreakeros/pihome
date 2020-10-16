@@ -195,7 +195,7 @@
     },
     {
       "aliasColors": {
-        "Humidity": "light-blue"
+        "Humidity": "blue"
       },
       "bars": false,
       "dashLength": 10,
@@ -231,7 +231,12 @@
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
-      "seriesOverrides": [],
+      "seriesOverrides": [
+        {
+          "alias": "Humidity",
+          "yaxis": 2
+        }
+      ],
       "spaceLength": 10,
       "stack": false,
       "steppedLine": false,
@@ -372,7 +377,7 @@
     },
     {
       "aliasColors": {
-        "Movement": "rgba(0, 0, 0, 0.1)"
+        "Movement": "super-light-red"
       },
       "bars": false,
       "dashLength": 10,
@@ -667,8 +672,8 @@
       "1d"
     ]
   },
-  "timezone": "",
+  "timezone": "browser",
   "title": "Home",
   "uid": "E_b4VFmRz",
-  "version": 1
+  "version": 2
 }
