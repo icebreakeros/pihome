@@ -7,7 +7,11 @@ class TemperatureSensor:
         self.sensor = dht22.read_retry(dht22.DHT22, pin=data_pin)
 
     def read(self, retries=5):
-        result = self.sensor
+        data_pin = 24
+        temp_max = 20
+        temp_min = 20
+
+        result = dht22.read_retry(dht22.DHT22, pin=data_pin)
         humidity,temperature = result
 
         if len(result) == 0 and retries > 0:
