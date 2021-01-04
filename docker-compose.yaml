@@ -4,9 +4,9 @@ version: '3'
 services:
   pihome:
     image: pihome
-    build: .
+    build: . 
     restart: always
-    network_mode: host
+    network_mode: bridge 
     devices:
       - "/dev/mem:/dev/mem"
     privileged: true
